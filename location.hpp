@@ -8,6 +8,7 @@ class Location
 public:
   std::vector<double> box;
   std::string name;
+  Location();
   Location(std::string name, std::vector<double> box);
   void printLocation();
 };
