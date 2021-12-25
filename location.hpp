@@ -6,12 +6,13 @@
 class Location
 {
 public:
-  std::vector<double> box;
+  std::vector<double[2]> box;
   std::string name;
   std::vector<Location *> children;
   Location();
   ~Location();
-  Location(std::string name, std::vector<double> box);
+  Location::Location(std::string name, std::vector<double[2]> box);
   void printLocation();
   bool isLeaf();
+  double area();
 };
